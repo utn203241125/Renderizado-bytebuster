@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es" class="light dark">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Servidor - Renderizado</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="theme-color" content="#fffbfe">
+  <script src="js/registraServiceWorker.js"></script>
+  <link rel="manifest" href="site.webmanifest">
+  <script type="module" src="lib/js/consumeJson.js"></script>
+  <script type="module" src="lib/js/muestraObjeto.js"></script>
+  <script type="module" src="lib/js/muestraError.js"></script>
+  <script src="ungap/custom-elements.js"></script>
+
+  <script type="module" src="js/configura.js"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/transicion_pestanas.css">
+
+</head>
+
+<body onload="consumeJson('srv/renderizado.php')
+.then(respuesta => muestraObjeto(document, respuesta.body))
+.catch(muestraError)">
+
+
+  <md-top-app-bar adicional="tab" headline="headline">
+
+    <h1>Renderizado en un servidor</h1>
+
+  </md-top-app-bar>
+
+  <h1 id="headline">Renderizado en un servidor</h1>
+
+  <nav-tab-fixed id="tab"></nav-tab-fixed>
+
+  <main>
+    <dl id="lista">
+      <dt>Cargando&hellip;</dt>
+      <dd><progress max="100">Cargando&hellip;</progress></dd>
+    </dl>
+
+</body>
+
+</html>

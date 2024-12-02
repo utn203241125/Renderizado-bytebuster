@@ -1,0 +1,61 @@
+{
+    "short_name": "Chistec",
+    "name": "ChistecRenderizado",
+    "id": "/index.html",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "theme_color": "#fffbfe",
+    "background_color": "#fffbfe",
+    "display_override": [
+        "window-controls-overlay"
+    ],
+    "description": "PWA de renderizado a nivel cliente y servidor",
+    "screenshots": [
+        {
+            "src": "/img/screenshot_horizontal.png",
+            "sizes": "1257x646",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "PWA con Material Design"
+        },
+        {
+            "src": "/img/screenshot_vertical.png",
+            "sizes": "595x644",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "PWA con Material Design (2)"
+        }
+    ],
+ "icons": [
+        {
+            "src": "/img/logo-128.png",
+            "sizes": "128x128",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/img/logo-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/img/logo-384.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/img/logo-276.png",
+            "sizes": "276x276",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/img/logo-96.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}
